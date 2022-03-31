@@ -1,0 +1,11 @@
+- Added different algorithms   
+- Modification of future features   
+- Modification of the current functionalities   
+- Changed the feature display of the current version   
+- Changed the order of some sentences   
+- Added warning phrase: Need to be opened in a command prompt/terminal   
+- Fix of a major bug that prevented the attack on a password containing one or more space(s)   
+- Take into account the length of the hash for the algorithms with variable size   
+- Local date format support   
+- Modification of the display of the start date and the end date   
+- Changing the elapsed time display   
