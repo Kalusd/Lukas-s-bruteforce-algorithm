@@ -95,7 +95,7 @@ print("""
 -----------------------------------------------------------------------------------------------------------------------------------------""")
 print("/!\ NEEDS TO BE OPENED IN COMMAND PROMPT / TERMINAL /!\ ")
 print("©Lukas (https://github.com/Kalusd)")
-print("""Version 1.1 : Currently Supporting SHA1, SHA224, SHA256, SHA384, SHA512, MD5, SHAKE_128, SHAKE_256, BLAKE2B, BLAKE2S, SHA3_224, SHA3_256, SHA3_384 and SHA3_512
+print("""Version 2.0 : Currently Supporting SHA1, SHA224, SHA256, SHA384, SHA512, MD5, SHAKE_128, SHAKE_256, BLAKE2B, BLAKE2S, SHA3_224, SHA3_256, SHA3_384 and SHA3_512
               NOT SUPPORTING (will be in future versions) : Salted hashes, Rainbow Tables and Dictionnary attacks""")
 choixMenu = int(input("\nPlease choose an option from the following ones : \n 1 - Unsalted Hashes \n 2 - Salted Hashes \n 3 - Rainbow Tables Attacks \n 4 - Dictionnaty Attacks \nEnter a number : "))
 if choixMenu == 1:
