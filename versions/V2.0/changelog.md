@@ -1,0 +1,2 @@
+- Significant reduction in the length of the program (reduction from 14 functions to 2, from 621 lines to 160)   
+- Addition of a parent menu to that of the choice of algorithms   
