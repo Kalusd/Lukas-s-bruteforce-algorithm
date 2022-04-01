@@ -9,14 +9,14 @@ def convert(seconds):               #CONVERT ELAPSED SECONDS IN MINUTES AND HOUR
     return time.strftime("%H:%M:%S", time.gmtime(seconds))
 
 def bruteforce():
-    dict = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "&", "é", '"', "'", "(", "-", "è", "_", "ç", "à", ")", "=", "$", "ù", "*", "!", ":", ";", ",", "?", ".", "/", "§", "%", "µ", "£", "¨", "^", "+", "²", "~", "#", "{", "[", "|", "`", "@", "]", "¤", "€", " "]
+    chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "&", "é", '"', "'", "(", "-", "è", "_", "ç", "à", ")", "=", "$", "ù", "*", "!", ":", ";", ",", "?", ".", "/", "§", "%", "µ", "£", "¨", "^", "+", "²", "~", "#", "{", "[", "|", "`", "@", "]", "¤", "€", " "]
     print("HASH IN : " + selectedAlgorithm)
     hashMdp = input("Enter hashed password : ")
     essais = 0
     startTime = time.time()
     rStartTime = time.strftime("%A %d %B %Y %H:%M:%S")
-    for n in range(0, len(dict) + 1):
-        for result in itertools.product(dict, repeat=n):
+    for n in range(0, len(chars) + 1):
+        for result in itertools.product(chars, repeat=n):
             essai = ""
             for item in result:
                 essai += str(item[0])
@@ -43,15 +43,15 @@ def bruteforce():
                 print("'" + str(essai) + "'" + " (" + str(hashEssai) + ")" + " doesn't match with current hashed password, trying next...")
 
 def bruteforceLength():
-    dict = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "&", "é", '"', "'", "(", "-", "è", "_", "ç", "à", ")", "=", "$", "ù", "*", "!", ":", ";", ",", "?", ".", "/", "§", "%", "µ", "£", "¨", "^", "+", "²", "~", "#", "{", "[", "|", "`", "@", "]", "¤", "€", " "]
+    chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "&", "é", '"', "'", "(", "-", "è", "_", "ç", "à", ")", "=", "$", "ù", "*", "!", ":", ";", ",", "?", ".", "/", "§", "%", "µ", "£", "¨", "^", "+", "²", "~", "#", "{", "[", "|", "`", "@", "]", "¤", "€", " "]
     print("HASH IN : " + selectedAlgorithm)
     hashMdp = input("Enter hashed password : ")
     longueur = int(input("Enter hash length in bytes : "))
     essais = 0
     startTime = time.time()
     rStartTime = time.strftime("%A %d %B %Y %H:%M:%S")
-    for n in range(0, len(dict) + 1):
-        for result in itertools.product(dict, repeat=n):
+    for n in range(0, len(chars) + 1):
+        for result in itertools.product(chars, repeat=n):
             essai = ""
             for item in result:
                 essai += str(item[0])
