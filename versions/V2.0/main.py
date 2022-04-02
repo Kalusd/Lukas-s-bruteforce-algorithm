@@ -140,8 +140,10 @@ def main():
         ]
 
         choixAlgo = 0
-        while not choixAlgo in range(
-            1, len(available_algorithms_deflen) + len(available_algorithms_undeflen) + 1
+        while (
+            0
+            < choixAlgo
+            < len(available_algorithms_deflen) + len(available_algorithms_undeflen) + 1
         ):
             try:
                 choixAlgo = int(
